@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./js/index.js"></script>
+    <title>Aleph</title>
+  </head>
+  <body>
+      <h1 class="titulo">Formulário de Pedidos</h1>
+      <!-- <h3><strong>
+        @alephlojaonline</strong></h3> -->
+    
+    <div class="container">
+      <form action="#">
+        <div class="linha">
+          <div class="col-25">
+            <label for="nome"> Nome:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="nome" placeholder="Nome" />
+          </div>
+
+        </div>
+        
+        <div class="linha">
+            <div class="col-25">
+                <label for="fone">Telefone:</label>
+
+            </div>
+            <div class="col-75">
+                <input type="text" id="fone" placeholder="Telefone">
+            </div>
+
+        </div>
+            <div class="linha">
+                <div class="col-25">
+                    <label for="entrega">Opção de Entrega:</label>
+    
+                </div>
+                <div class="col-75">
+                   <select name="entrega" id="entrega" onchange="tipoEntrega()">
+
+                       <option value="loja">Retirar na loja</option>
+                       <option value="entrega">Entregar em Domicílio</option>
+                   </select>
+                </div>
+            </div>
+            
+              
+            </button>
+            <div id="modal-entrega" class="w3-modal">
+              <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 400px">
+                <div class="w3-center">
+                  <h1>Endereço</h1>
+                  <form class="w3-container">
+                    <div class="w3-section">
+                      <div class="input_rua"><input type="text" id="rua" placeholder="Rua:" required></div>
+                      <div class="input_numero"><input type="text" id="numero" placeholder="Nº:" required></div>
+                      <div class="input_bairro"><input type="text" id="bairro" placeholder="Bairro:" required></div>
+                      <div class="input_complemento"><input type="text" id="complemento" placeholder="Complemento:" required></div>
+                    </div>
+                    <span class="botoes-modal">
+                      <button class="btn_ok" onclick="salvarEndereco()">Ok</button>
+                      <button class="btn_cancelar" onclick="document.getElementById('modal-entrega').style.display='none'">Cancelar</button>
+                    </span>
+                  </form>
+                  <span onclick="document.getElementById('modal-entrega').style.display='none'"
+                  class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Fechar">&times</span>
+
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <div class="linha">
+                <div class="col-25">
+                    <label for="pedido">pedido:</label>
+    
+                </div>
+                <div class="col-75">
+                   <textarea name="pedido" id="pedido" cols="30" rows="10"></textarea>
+
+            
+                </div>
+
+                <div class="linha">
+                  <span><a id="wpp-link" href="">link</a></span>
+
+                </div>
+      </form>
+    </div>
+    </div>
+  </body>
+  <footer>
+    <p><a href="www.instagram.com"></a></p>
+  </footer>
+</html>

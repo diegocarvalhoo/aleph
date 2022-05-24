@@ -1,0 +1,161 @@
+    * {
+        box-sizing: border-box;
+        max-width: 600px;
+        margin: auto;
+        padding-top: 10px;
+        
+    }
+
+    .titulo{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 0px;
+
+    }
+
+    span{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        background-color: violet;
+        text-align: center;
+        /* padding: 60px 0px 0px 0px */
+        
+    }
+
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 60px 0px 0px 0px;
+        color: red;
+    }
+
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(235, 118, 118);
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+.container{
+    border-radius: 0px 0px 5px 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+   
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    
+}
+
+.linha:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.w3-modal{
+    min-width: 100%;
+}
+
+.input_rua{
+    float: left;
+    width: 75%;
+    margin: 5px 5px;
+}
+
+.input_numero{
+    float: left;
+    width: 20%;
+    margin: 5px 5px;
+
+}
+.input_bairro{
+    float: left;
+    width: 35%;
+    margin: 5px 5px;
+}
+.input_complemento{
+    float: left;
+    width: 60%;
+    margin: 5px 5px;
+}
+
+.btn_ok{
+    border: none;
+    background-color: green;
+    color: white;
+    width: 30%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.btn_ok:hover{
+    background-color: #45a049;
+}
+
+.btn_cancelar{
+    border: none;
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn_cancelar:hover{
+    background-color: #be1212
+
+}
+
+@media screen and (max-width: 500px) {
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    
+}
+/* body{
+    background-color:goldenrod;
+} */
+button{
+    color: red;
+    background-color: rgb(209, 173, 209)
+
+}
